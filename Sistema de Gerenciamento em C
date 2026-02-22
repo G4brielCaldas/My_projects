@@ -1,0 +1,44 @@
+#include <stdio.h>
+int main(){
+
+//Nomeclatura dos Produtos
+    char ProdutoA [30] = "Produto A";
+    char ProdutoB [30] = "Produto B";
+
+//Quantidade de produtos em estoque (Sem valores Negativos)
+    unsigned int estoqueA = 1000;
+    unsigned int estoqueB = 2000;
+
+//Valor dos Produtos individualmente
+    float ValorA = 10.50;
+    float ValorB = 20.40;
+
+//O minimo que precisa ter no estoque (Caso não tenha retornará como falso)
+    unsigned int estoqueminimoA = 500;
+    unsigned int estoqueminimoB = 2500;
+
+//Define o valor do estoque atual multiplicando "Valor" e "Quantidade" no estoque
+    double ValorTotalA;
+    double ValorTotaB;
+
+//Variavel das comparações para indicar se o produto esta acima ou abaixo do minimo exigido no estoque    
+    int resultadoA , resultadoB;
+
+//Exibe as informaçoes de "Descrição" , "Quantidade" e "Valor" de cada Produto  
+    printf("Produto : %s tem estoque : %d e o valor unitario é R$ %.2f \n", ProdutoA, estoqueA, ValorA);
+    printf("Produto : %s tem estoque : %d e o valor unitario é R$ %.2f \n", ProdutoB, estoqueB, ValorB);
+
+//O resultado da comparação é igual a "Quantidade" em estoque sendo "Maior" que a "Quantidade Minima" que pode ter
+    resultadoA = estoqueA > estoqueminimoA;
+    resultadoB = estoqueB > estoqueminimoB;
+
+//Resultado das Comparações (True / False)   
+    printf("O produto: %s tem estoque minimo : %d \n", ProdutoA , resultadoA);
+     printf("O produto: %s tem estoque minimo : %d \n", ProdutoB , resultadoB);
+
+//A função abaixo executa três tarefas a primeira de exibir no terminal a segunda de fazer as multiplicações e por fim exibir se o resultado é verdadeiro    
+printf("O valor total do produto A (R$ %.2f) é maior que o valor total do produto B (R$ %.2f)? %d \n", estoqueA * ValorA, estoqueB * ValorB, (estoqueA * ValorA), 
+(estoqueB * ValorB)              
+);
+
+}
