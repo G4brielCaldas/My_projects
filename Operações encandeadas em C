@@ -1,0 +1,74 @@
+#include <stdio.h>
+int main() {
+
+/*Operações Encandeadas são utilizadas quando mais de um comando deve ser dado ao
+mesmo tempo , por exemplo, se a condição 1 não for alcançada terá uma outra condição
+ou mais que poderam ser alcançadas como um "plano B" Caso o contrario será considerado
+False.
+*/
+/*
+
+if ("condicao1") {
+  // Código a ser executado se condicao1 for verdadeira
+} else if ("condicao2") {
+  // Código a ser executado se condicao1 for falsa e condicao2 for verdadeira
+} else {
+  // Código a ser executado se todas as condições anteriores forem falsas
+}
+  
+*/
+
+ int idade;
+
+  printf("Digite a sua idade: \n");
+  scanf("%d", &idade);
+
+  if (idade < 12) {
+    printf("Você é uma criança\n");
+  }
+
+   else if (idade >= 12 && idade < 18) {
+    printf("Você é um adolescente\n");
+  }
+
+   else if (idade >= 18 && idade < 60) {
+    printf("Você é um adulto\n");
+  }
+
+   else {
+    printf("Você é um idoso\n");
+  }
+
+
+  /*Ainda nesse tema Temos a Variavel Switch que serve para simplificar o processo
+  de decisão fornecendo escolhas para o usuario e com base nas escolhas
+  tomam decisões diferentes exemplo :
+  */
+
+  int variavel;
+  printf("________Digite o Valor da Variavel de 1 a 3________ \n");
+  scanf("%d", &variavel);
+
+  switch (variavel) {
+  case 1:
+    // Código a ser executado se variavel == valor1
+    printf("O valor que foi escolhido é UM !!! \n");
+    break;
+  case 2:
+    // Código a ser executado se variavel == valor2
+    printf("O valor que foi escolhido é DOIS !!! \n");
+    break;
+  // Você pode adicionar quantos casos forem necessários
+  default:
+    // Código a ser executado se nenhum dos casos acima for verdadeiro
+    printf("Nem um e nem outro o valor escolhido foi 3 ou mais !!! \n");
+
+    /*O comando "break" no final das "Cases" serve para freiar o programa
+    caso não colocado o mesmo vai continuar a leitura das outras Cases até o fim
+    */
+}
+
+return 0;
+
+}
+
