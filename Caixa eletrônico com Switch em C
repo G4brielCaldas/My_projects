@@ -1,0 +1,31 @@
+#include <stdio.h>
+int main(){
+
+int opcao;
+int saldo = 10000;
+
+printf("!!!___Escolha uma Opcção___!!!\n");
+printf("1 ___Verificar Saldo___\n");
+printf("2 ___Fazer deposito___\n");
+printf("3 ___Fazer Saque___\n");
+printf("Digite Aqui : \n");
+scanf("%d" , &opcao);
+
+switch (opcao)
+{
+case 1:
+    printf("O seu Saldo é R$ : %d \n", saldo);
+    break;
+case 2:
+    printf ("Digite o Banco que deseja depositar \n");
+    break;
+case 3:
+    printf("Digite R$ que deseja depositar ! \n");
+    break;
+
+default:
+    printf("Opção Invalida !!! >:( \n");
+    break;
+}
+
+}
