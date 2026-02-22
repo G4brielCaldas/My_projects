@@ -1,0 +1,36 @@
+#include <stdio.h>
+ 
+int main() {
+    
+    int a = 10;
+    int b = 3;
+
+    float divisao = (float)  a / b; //Pegamos os dois numeros inteiros e os convertemos em flutuantes manualmente
+
+    printf("A divisão manual é : %.2f \n" , divisao); // "%.2f" indicam que a variavel float tem 2 casas decimais "X.XX" 
+
+    //Exemplo de conversão implicita (Automatica) :
+
+    int c = 10;
+    float d = 3.5;
+    float resultado = c + d; // 'a' é convertido implicitamente para float
+ 
+    printf("Resultado do exemplo Automatico: %.2f\n", resultado);
+ 
+
+
+    
+    //Exemplo de calculos com variaveis flutuantes (Float) :
+
+    float x = 5.5;
+    float y = 2.2;
+    float mais = x + y;
+    float menos = x - y;
+    float produto = x * y;
+    float quociente = x / y; // Divisão de ponto flutuante
+ 
+    printf("Soma: %.2f\n",mais );
+    printf("Diferença: %.2f\n",menos );
+    printf("Produto: %.2f\n", produto);
+    printf("Quociente: %.2f\n", quociente);
+}
