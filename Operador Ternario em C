@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main () {
+
+/*O operador ternário é uma forma compacta de escrever uma instrução if-else. Ele é chamado de ternário porque envolve três partes.
+Uma condição, Um valor se a condição for verdadeira , Um valor se a condição for falsa
+*/
+
+//EX:
+int temperatura = 29;
+int resultado;
+
+temperatura >= 30 ? printf ("Está calor!!!") : printf ("Está ficando mais frio!");
+
+
+
+}
