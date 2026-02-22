@@ -1,0 +1,40 @@
+#include <stdio.h>
+int main() {
+
+    int A = 10, B = 5;
+
+//Operadores logicos são formas de criar condiçoes para um codigo especifico
+//Dependendo da situaçao por exemplo:
+
+//Operador (&&) significa "E" ou "and" em inglês caso A && B seja True (Algo acontece)
+
+if (A > 0 && B > 0)
+{
+    printf("Ambos os numeros são maiores que Zero (0) \n");
+} else { printf ("Algo está errado com o && :( \n");
+
+}
+
+
+//Operador (||) significa "Ou" ou "Or" Se A || B for True a condiçao é ativada
+
+if (A > 0 || B > 0)
+{
+    printf(" Tudo nos conformes com o || \n");
+} else { printf (" Algo errado com os || :o \n");
+
+}
+
+//Operador (!) significa "Não" ou "Not" Se !A então A é false (inverte)
+
+A = 0;
+
+if (!(A > 0)) {
+
+    printf("A variavel não está invertida e é verdadeira \n");
+
+} else { printf (" A variavel está invertida e é falsa :D \n");
+
+}
+
+}
