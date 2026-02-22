@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main() {
+
+//Exemplos de variaveis de decisões (If , Else , Switch)
+
+//Exemplos de IF
+int numero1 = 8;
+  int numero2 = 5;
+
+  if (numero1 > numero2) {
+    printf("numero1 é maior que numero2\n");
+  }
+
+/* operador % na linguagem C é conhecido como o operador de módulo ou 
+resto da divisão inteira. basicamente ele pega os numeros que são divisiveis */
+
+int numero = 4;
+
+  if (numero % 2 == 0) { //Se o numeor for dividido por "% 2" é igual a "0" então é par
+    printf("O número é par\n");
+  }
+
+  //Exemplos de IF e Else
+int numerox = 9;
+
+  if (numerox % 2 == 0) {
+    printf("O número é par\n");
+  } else {
+    printf("O número é ímpar\n");
+  }
+
+
+}
