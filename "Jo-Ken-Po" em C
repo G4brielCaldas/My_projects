@@ -1,0 +1,64 @@
+#include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
+
+int main() {
+
+int EscolhadoJogador, EscolhadoComputador;
+srand (time(0));
+
+printf(" *** Jogo do Jokenpô *** \n");
+printf("Escolha uma Opção : \n");
+printf(" 1 ___Pedra___ \n");
+printf(" 2 ___Papel___ \n");
+printf(" 3 ___Tesoura___ \n");
+printf(" Escolha : \n");
+
+scanf("%d" , &EscolhadoJogador);
+
+EscolhadoComputador = rand() % 3 + 1 ;
+
+switch (EscolhadoJogador)
+{
+case 1:
+    printf("Jogador : Pedra - ");
+    break;
+    case 2:
+    printf("Jogador : Papel - ");
+    break;
+    case 3:
+    printf("Jogador : Tesoura - ");
+    break;
+
+default:
+printf("Opção invalida \n");
+    break;
+}
+
+switch (EscolhadoComputador)
+{
+case 1:
+    printf("Computador : Pedra \n");
+    break;
+    case 2:
+    printf("Computador : Papel \n");
+    break;
+    case 3:
+    printf("Computador : Tesoura \n");
+    break;
+}
+
+if (EscolhadoComputador == EscolhadoJogador) {
+    printf("*** Empate *** \n");
+} else if ((EscolhadoJogador == 1) && (EscolhadoComputador == 3) || 
+        (EscolhadoJogador == 2) && (EscolhadoComputador == 1) || 
+        (EscolhadoJogador == 3) && (EscolhadoComputador == 2))
+{
+    printf("### Parabens Vc Venceu ### \n");
+} else {
+    printf("### Você Perdeu :( ### \n");
+}
+
+
+return 0;
+}
